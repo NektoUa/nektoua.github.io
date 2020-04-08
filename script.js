@@ -5,6 +5,14 @@ $(document).ready(function () {
         $('.animated-icon').toggleClass('open');
     });
 
+    // Кнопка see more
+    $('.btn-outline-secondary').click(function () {
+        $("body,html").animate({
+            scrollTop: $('.portfolio').offset().top
+        }, 1000)
+    });
+
+
     // Кнопка вверх
     $(function () {
         $(window).scroll(function () {
