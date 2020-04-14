@@ -74,9 +74,7 @@ Sim.prototype.elemPrev = function (num) {
     this.sldrElements[this.currentElement].style.opacity = '1';
     this.sldrElements[prevElement].style.opacity = '0';
 
-    if (this.options.dots) {
-        this.dotOn(prevElement); this.dotOff(this.currentElement)
-    }
+
 };
 
 Sim.prototype.elemNext = function (num) {
@@ -99,14 +97,6 @@ Sim.prototype.elemNext = function (num) {
     if (this.options.dots) {
         this.dotOn(prevElement); this.dotOff(this.currentElement)
     }
-};
-
-Sim.prototype.dotOn = function (num) {
-    this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
-};
-
-Sim.prototype.dotOff = function (num) {
-    this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
 };
 
 Sim.initialize = function (that) {

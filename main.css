@@ -75,7 +75,10 @@
     }
     
     .animated-icon span:nth-child(2) {
+    width: 10px;
     top: 8px;
+    /* text-align: center; */
+    margin: 0px 5px;
     }
     
     .animated-icon span:nth-child(3) {
@@ -92,7 +95,7 @@
     
     .animated-icon.open span:nth-child(2) {
     opacity: 0;
-    left: -60px;
+    left: -90px;
     }
     
     .animated-icon.open span:nth-child(3) {
@@ -382,13 +385,17 @@ img {
     left: 0;
     top: 0;
     display: block;
-    }
+        }
     .portfolio {
         display: none;
     }
 
+    .down {
+        margin: 100px;
+    }
+
     /* Портфолио квадрат */
-    @media (max-width: 1105px) {
+    @media (max-width: 1130px) {
         .container {
             background-color: bisque;
             display: flex;
@@ -433,16 +440,32 @@ img {
         justify-content: space-around;
     }
     .shrink {
-        background-color: aqua;
+        background-color:rgb(255, 255, 255);
+        font-size: 0.9rem;
+        height: 5rem;
+        /* width: 5rem; */
+        /* border: 1px solid rgb(19, 19, 20); */
+        /* border-radius: 2px; */
+        align-content: center;
         /* flex-shrink: 0; */
         /* height: 70px;
         width: 70px; */
         /* z-index: 8; */
     }
-    .box-in-port {
+    .shrink a {
+        color: black;
+    }
+
+    .icon-port {
+        width: 3rem;
+        
+    }
+
+    /* использовался раньше для разметки боксов  */
+    /* .box-in-port {
         height: 5rem;
         width: 5rem;
-        /* border: 1px solid; */
+        border: 1px solid;
         /* padding: 3px; */
         /* margin: 3px; */
-            }
+            } */
