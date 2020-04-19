@@ -29,6 +29,27 @@ function mouseOut(value) {
 document.querySelector('.navbar-nav').addEventListener('mouseover', mouseIn);
 document.querySelector('.navbar-nav').addEventListener('mouseout', mouseOut);
 
+// скрипт создания дивов фото
+const screenPortfolio = [['3.jpg', 'Istanbul'], ['4.jpg', '1'], ['5.jpg', '2'], ['1.jpg', '3']];
+
+// function turnLi() {
+//     let line = document.createElement('li');
+//     line.classList.add('sim-slider-element');
+//     document.querySelector('.sim-slider-list')appendChild(line);
+// }
+
+function turnImg() {
+    for (const element of screenPortfolio) {
+        let newImg = document.createElement('img');
+        newImg.classList.add('sim-slider-element');
+        newImg.src = `./images/portfolio/${element[0]}`;
+        newImg.alt = element[1];
+        document.querySelector('.sim-slider-list').appendChild(newImg);
+    }
+}
+turnImg();
+
+
 // скрипт портфолио
 function Sim(sldrId) {
 

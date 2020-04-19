@@ -377,7 +377,7 @@ img {
     }
     
     .sim-slider-element {
-    width: auto;
+    width: 100%;
     transition: opacity 1.3s ease-in;
     opacity: 0;
     position: absolute;
@@ -395,7 +395,7 @@ img {
     }
 
     /* Портфолио квадрат */
-    @media (max-width: 1130px) {
+    @media (max-width: 850px) {
         .container {
             background-color: bisque;
             display: flex;
@@ -414,14 +414,30 @@ img {
         justify-content: start;
         }
         .sim-slider {
-            display: none;
+            max-width: 1000px;
+            min-width: auto;
+            /* margin: auto;
+            padding: auto; */
+            /* border: 1px solid #ccd; */
+            background-color: white;
+            }
+                .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    }
+        .sim-slider-element {
+            position: absolute;
+            /* display: flex; */
+            /* display: none; */
             /* position: relative; */
             /* height: 708px; */
         }
-        .sim-slider-element {
+        /* .sim-slider-element {
             display: block;
             position: static;
-        }
+        } */
         .portfolio {
             display: block;
         }
