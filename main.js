@@ -1,48 +1,26 @@
 let a = document.querySelectorAll('.nav-link');
-function mouseIn(value) {
-    console.log(a);
-    console.log(value);
+function mouseInOut(value) {
     for (let nav of a) {
-        console.log(nav);
         if (nav.innerText == value.target.text) {
-            let b = Array.from(nav.textContent);
-            b.reverse();
-            nav.classList.add('active-source');
+            let b = Array.from(nav.textContent).reverse();
+            if (value.type == "mouseover") nav.classList.add('active-source');
             document.querySelector('.active-source').textContent = b.join('');
-            console.log(nav);
+            if (value.type == 'mouseout') nav.classList.remove('active-source');
         }
     }
 }
 
-function mouseOut(value) {
-    for (let nav of a) {
-        if (nav.innerText == value.target.text) {
-            let b = Array.from(nav.textContent);
-            b.reverse();
-            document.querySelector('.active-source').textContent = b.join('');
-            nav.classList.remove('active-source');
-            console.log(nav)
-        }
-    }
-}
-
-document.querySelector('.navbar-nav').addEventListener('mouseover', mouseIn);
-document.querySelector('.navbar-nav').addEventListener('mouseout', mouseOut);
+document.querySelector('.navbar-nav').addEventListener('mouseover', mouseInOut);
+document.querySelector('.navbar-nav').addEventListener('mouseout', mouseInOut);
 
 // скрипт создания дивов фото
-const screenPortfolio = [['3.jpg', 'Istanbul'], ['4.jpg', '1'], ['5.jpg', '2'], ['1.jpg', '3']];
-
-// function turnLi() {
-//     let line = document.createElement('li');
-//     line.classList.add('sim-slider-element');
-//     document.querySelector('.sim-slider-list')appendChild(line);
-// }
+const screenPortfolio = [['3', 'Istanbul'], ['4', '1'], ['5', '2'], ['1', '3']];
 
 function turnImg() {
     for (const element of screenPortfolio) {
         let newImg = document.createElement('img');
         newImg.classList.add('sim-slider-element');
-        newImg.src = `./images/portfolio/${element[0]}`;
+        newImg.src = `./images/portfolio/${element[0]}.jpg`;
         newImg.alt = element[1];
         document.querySelector('.sim-slider-list').appendChild(newImg);
     }
