@@ -13,6 +13,25 @@ function mouseInOut(value) {
 document.querySelector('.navbar-nav').addEventListener('mouseover', mouseInOut);
 document.querySelector('.navbar-nav').addEventListener('mouseout', mouseInOut);
 
+// скрипт приветствия
+const hello = () => {
+    let today = new Date();
+    let hourNow = today.getHours();
+    let greeting;
+    if (hourNow > 18) {
+        greeting = 'Good evening!';
+    } else if (hourNow > 12) {
+        greeting = 'Good afternoon!';
+    } else if (hourNow > 0) {
+        greeting = 'Good morning!';
+    } else {
+        greeting = 'hi!';
+    }
+    return greeting
+}
+document.querySelector('#part-day').innerHTML = hello();
+
+
 // скрипт создания дивов фото
 const screenPortfolio = [['3', 'Istanbul'], ['4', '1'], ['5', '2'], ['1', '3']];
 

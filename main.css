@@ -133,9 +133,12 @@
     top: 30%;
     margin: auto;
     padding: 2em;
+    color: rgb(255, 255, 255);
+    
 }
-.description h1 {
-    color: rgb(13, 19, 97);
+.description h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 4px black, 0 0 1em rgb(187, 89, 89);
    }
 .description p{
     color: #666666;
@@ -281,6 +284,8 @@
 	right: 50px;
     bottom: 60px;
     opacity: 0.3;
+    width: 30px;
+    height: 30px;
    }
    #topArrow:hover {
     opacity: 1;
