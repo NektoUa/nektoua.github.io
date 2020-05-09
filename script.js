@@ -46,5 +46,12 @@ $('#anime-portfolio').typeIt({
     autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
 });
 
+// Анимация футер
+$(".social li a").each(function (i) {
+    $(this).hover(function () {
+        $(".socialWrapper").toggleClass("socialActive" + (i + 1));
+    });
+});
+
 
 

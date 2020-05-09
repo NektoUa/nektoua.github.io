@@ -19,13 +19,13 @@ const hello = () => {
     let hourNow = today.getHours();
     let greeting;
     if (hourNow > 18) {
-        greeting = 'Good evening!';
+        greeting = 'Hello!';
     } else if (hourNow > 12) {
-        greeting = 'Good afternoon!';
+        greeting = 'Hola!';
     } else if (hourNow > 0) {
-        greeting = 'Good morning!';
+        greeting = 'Bonjour!';
     } else {
-        greeting = 'hi!';
+        greeting = 'Вітаю!';
     }
     return greeting
 }
