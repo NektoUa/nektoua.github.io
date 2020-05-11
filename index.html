@@ -9,6 +9,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="fm.revealator.jquery.css">
     <script src="https://kit.fontawesome.com/4992bd3116.js" crossorigin="anonymous"></script>
 </head>
 
@@ -64,11 +65,11 @@
 
     <!-- Типо про меня -->
     <div class="row about" id="about">
-        <div class="col-xl-3 col-lg-4 col-md-7 col-sm-10 ">
+        <div class="col-xl-3 col-lg-4 col-md-7 col-sm-10 revealator-slideright revealator-once">
             <img align="center" src="./images/me.jpg" class="img-fluid ">
             <span class="text-justify">S.Web Developer</span>
         </div>
-        <div class="col-lg-8 col-md-6 col-sm-12 desc">
+        <div class="col-lg-8 col-md-6 col-sm-12 desc revealator-slideleft revealator-once">
 
             <h3>
                 <font color="#3AC1EF">D.John</font>
@@ -86,9 +87,9 @@
 
     <!-- Типа портфолио -->
     <div id="portfolio">
-        <h1 class="text-center">Portfolio</h1>
-        <div class="container col-sm-12">
-            <div class="col-lg-3 col-md-3 col-sm-12 port">
+        <h1 class="text-center revealator-fade revealator-once">Portfolio</h1>
+        <div class="container col-sm-12 ">
+            <div class="col-lg-3 col-md-3 col-sm-12 port revealator-slideright revealator-once">
                 <div class=" shrink col-lg-4"></div>
                 <div class=" no col-lg-4"></div>
                 <div class=" no col-lg-4"></div>
@@ -99,13 +100,13 @@
                 <div class=" shrink col-lg-4"></div>
                 <div class=" no col-lg-4"></div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 sim-slider">
+            <div class="col-lg-6 col-md-6 col-sm-12 sim-slider revealator-slideup revealator-once">
                 <ul class="sim-slider-list ">
                     <img src="./images/portfolio/no-image.svg" alt="screen">
 
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 port">
+            <div class="col-lg-3 col-md-3 col-sm-12 port revealator-slideleft revealator-once">
                 <div class=" no col-lg-4"></div>
                 <div class=" shrink col-lg-4"></div>
                 <div class=" no col-lg-4"></div>
@@ -257,15 +258,15 @@
             </form>
         </div>
     </div>
-    <div class="primary-color">
+    <div class="primary-color ">
         <footer class="page-footer bg-primary ">
-            <div class="container socialWrapper" id="contact">
-                <div class="row py-4 d-flex align-items-center">
+            <div class=" socialWrapper " id="contact">
+                <div class="row py-3 d-flex align-items-center">
                     <div class="col-md-6 col-lg-6 text-center text-md-left mb-4 mb-md-0">
                         <h5 class="mb-0 num">2020</h5>
 
                     </div>
-                    <div class="col-md-6 col-lg-6 " id="profile">
+                    <div class="col-md-6 col-lg-6 " id="profile ">
                         <div>
                             <h4>
                                 <span class="hide default">contact</span>
@@ -277,34 +278,15 @@
                             </h4>
                             <ul class="social">
                                 <li><a href="https://www.facebook.com/illya.barkov" target="_blank"><i
-                                            class="fa fa-facebook-square fa-3x"></i></a></li>
+                                            class="fa fa-facebook-square fa-2x "></i></a></li>
                                 <li><a href="https://github.com/NektoUa" target="_blank"><i
-                                            class="fa fa-github-square fa-3x"></i></a></li>
+                                            class="fa fa-github-square fa-2x"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/illya-barkov-a06706124/" target="_blank"><i
-                                            class="fa fa-linkedin-square fa-3x"></i></a></li>
+                                            class="fa fa-linkedin-square fa-2x"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/illya-barkov-a06706124/" target="_blank"><i
-                                            class="fab fa-skype  fa-3x"></i></a></li>
+                                            class="fab fa-skype  fa-2x"></i></a></li>
                             </ul>
                         </div>
-
-
-                        <!-- <ul class="social-icons">
-                            <li><a href="https://github.com/NektoUa" target="_blank">
-                                    <img src="./images/social network/github.svg" alt="github" class="fa fa-github"></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/illya-barkov-a06706124/" target="_blank">
-                                    <img src="./images/social network/linkedin.svg" alt="facebook"
-                                        class="fa fa-linkedin"></a></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/illya.barkov" target="_blank">
-                                    <img src="./images/social network/facebook.svg" alt="facebook"
-                                        class="fa fa-facebook"></a>
-                            </li>
-                            <li><a href="skype:illyade3?chat">
-                                    <img src="./images/social network/skype.svg" alt="skype" class="fa fa-skype"></a>
-                            </li>
-                        </ul> -->
-
                     </div>
                 </div>
             </div>
@@ -326,6 +308,7 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="fm.revealator.jquery.js"></script>
     <script type="text/javascript" src='main.js'></script>
     <script src="./script.js"></script>
 </body>
