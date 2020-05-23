@@ -168,7 +168,7 @@
    .about img{
     height: 100%;
        width: 100%;
-       border-radius: 50%
+       border-radius: 10%
    }
    .about span{
     display: block;
@@ -513,6 +513,7 @@ img {
     .socialWrapper .default { display: block; }
     .socialWrapper.socialActive1 .default, .socialWrapper.socialActive2 .default, .socialWrapper.socialActive3 .default, .socialWrapper.socialActive4 .default, .socialWrapper.socialActive5 .default { display: none; }
     .socialWrapper.socialActive1 .head1, .socialWrapper.socialActive2 .head2, .socialWrapper.socialActive3 .head3, .socialWrapper.socialActive4 .head4, .socialWrapper.socialActive5 .head5 { display: block; }
+
 
 
     /* использовался раньше для разметки боксов  */

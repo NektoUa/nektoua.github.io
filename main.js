@@ -17,7 +17,7 @@ document.querySelector('.navbar-nav').addEventListener('mouseout', mouseInOut);
 const hello = () => {
     let today = new Date();
     let hourNow = today.getHours();
-    let greeting;
+    let greeting = '';
     if (hourNow > 18) {
         greeting = 'Hello!';
     } else if (hourNow > 12) {
