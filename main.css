@@ -4,13 +4,54 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 60px;
+    margin: 0 10px;
+        }
+
+.sticky ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.sticky a {
+    font-weight: 500;
+    font-size: 22px;
+    color: #222
+}
+
+.sticky .nav-item a:hover {
+    /* font-weight: 200; */
+    color: #000000;
+    text-shadow: 1px 1px 1px black, 0 0 1em rgb(173, 126, 126);
+    }
+
+.nav-st{
+    /* background-color: blue; */
+    /* background-color:#343a40!important */
+}
+
 .navbar{
-    background:rgb(204, 185, 167);
+    /* background:rgb(204, 185, 167); */
+    background-color:#343a40!important;
+    transition: 0.4s;
+    /* background-color:#343a40 */
 }
 .nav-link , .navbar-brand{
     color: #f4f4f4;
     cursor: pointer;
-    padding-left: 5px;
+    padding-left: 10px;
+    transition: 0.2s;
 }
 .nav-link{
     margin-right: 1.5rem!important ;
@@ -18,10 +59,11 @@
 .nav-link:hover {
     color: #ca9969;
 }
+
 .navbar-brand:hover{
     background: #f1eeee;
     color: #1b1917;
-    padding: 5px 4px;
+    padding: 5px 10px;
     border-radius: 3px;
 }
 .navbar-collapse{
@@ -116,6 +158,7 @@
 
 .bg-primary{
     background-color:#343a40!important;
+    /* opacity: 0.2; */
 }
 
    .overlay{

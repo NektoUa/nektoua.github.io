@@ -1,3 +1,10 @@
+window.addEventListener("scroll", function () {
+    let header = document.querySelector('.nav-st');
+    header.classList.toggle('navbar', window.scrollY > 0)
+    header.classList.toggle('sticky', window.scrollY == 0)
+})
+
+
 let a = document.querySelectorAll('.nav-link');
 function mouseInOut(value) {
     for (let nav of a) {
