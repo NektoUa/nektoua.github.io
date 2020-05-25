@@ -33,7 +33,7 @@
 .sticky .nav-item a:hover {
     /* font-weight: 200; */
     color: #000000;
-    text-shadow: 1px 1px 1px black, 0 0 1em rgb(173, 126, 126);
+    text-shadow: 2px 2px 2px rgb(65, 57, 57), 0 0 2em rgb(173, 126, 126);
     }
 
 .nav-st{

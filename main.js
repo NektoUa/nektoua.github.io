@@ -7,12 +7,14 @@ window.addEventListener("scroll", function () {
 
 let a = document.querySelectorAll('.nav-link');
 function mouseInOut(value) {
-    for (let nav of a) {
-        if (nav.innerText == value.target.text) {
-            let b = Array.from(nav.textContent).reverse();
-            if (value.type == "mouseover") nav.classList.add('active-source');
-            document.querySelector('.active-source').textContent = b.join('');
-            if (value.type == 'mouseout') nav.classList.remove('active-source');
+    if (window.scrollY > 0) {
+        for (let nav of a) {
+            if (nav.innerText == value.target.text) {
+                let b = Array.from(nav.textContent).reverse();
+                if (value.type == "mouseover") nav.classList.add('active-source');
+                document.querySelector('.active-source').textContent = b.join('');
+                if (value.type == 'mouseout') nav.classList.remove('active-source');
+            }
         }
     }
 }
