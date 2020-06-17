@@ -1,19 +1,19 @@
 window.addEventListener("scroll", function () {
     let header = document.querySelector('.nav-st');
-    header.classList.toggle('navbar', window.scrollY > 0)
-    header.classList.toggle('sticky', window.scrollY == 0)
+    header.classList.toggle('navbar', window.scrollY > 0);
+    header.classList.toggle('sticky', window.scrollY === 0);
 })
-
 
 let a = document.querySelectorAll('.nav-link');
 function mouseInOut(value) {
+    const active = 'active-source';
     if (window.scrollY > 0) {
         for (let nav of a) {
             if (nav.innerText == value.target.text) {
                 let b = Array.from(nav.textContent).reverse();
-                if (value.type == "mouseover") nav.classList.add('active-source');
-                document.querySelector('.active-source').textContent = b.join('');
-                if (value.type == 'mouseout') nav.classList.remove('active-source');
+                value.type === 'mouseover' ? nav.classList.add(active) : null;
+                document.querySelector(`.${active}`).textContent = b.join('');
+                value.type === 'mouseout' ? nav.classList.remove(active) : null;
             }
         }
     }
@@ -24,22 +24,15 @@ document.querySelector('.navbar-nav').addEventListener('mouseout', mouseInOut);
 
 // скрипт приветствия
 const hello = () => {
-    let today = new Date();
-    let hourNow = today.getHours();
+    let hourNow = new Date().getHours();
     let greeting = '';
-    if (hourNow > 18) {
-        greeting = 'Hello!';
-    } else if (hourNow > 12) {
-        greeting = 'Hola!';
-    } else if (hourNow > 0) {
-        greeting = 'Bonjour!';
-    } else {
-        greeting = 'Вітаю!';
-    }
+    if (hourNow > 18) greeting = 'Hello!';
+    else if (hourNow > 12) greeting = 'Hola!';
+    else if (hourNow > 0) greeting = 'Bonjour!';
+    else greeting = 'Вітаю!';
     return greeting
 }
 document.querySelector('#part-day').innerHTML = hello();
-
 
 // скрипт создания дивов фото
 const screenPortfolio = [['3', 'Istanbul'], ['4', '1'], ['5', '2'], ['1', '3']];
@@ -55,17 +48,11 @@ function turnImg() {
 }
 turnImg();
 
-
 // скрипт портфолио
 function Sim(sldrId) {
-
+    let simSlider = document.querySelector('.sim-slider')
     let id = document.getElementById(sldrId);
-    if (id) {
-        this.sldrRoot = id
-    }
-    else {
-        this.sldrRoot = document.querySelector('.sim-slider')
-    };
+    id ? this.sldrRoot = id : this.sldrRoot = simSlider;
 
     // Carousel objects
     this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
@@ -77,7 +64,6 @@ function Sim(sldrId) {
 };
 
 Sim.defaults = {
-
     // Default options for the carousel
     loop: true,     // Бесконечное зацикливание слайдера
     auto: true,     // Автоматическое пролистывание
@@ -100,7 +86,6 @@ Sim.prototype.elemPrev = function (num) {
 
     this.sldrElements[this.currentElement].style.opacity = '1';
     this.sldrElements[prevElement].style.opacity = '0';
-
 
 };
 
