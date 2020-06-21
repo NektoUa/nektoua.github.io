@@ -144,7 +144,7 @@ Sim.initialize = function (that) {
 
     if (!that.options.loop) {
         that.leftArrow.style.display = 'none';  // отключить левую стрелку
-        that.options.auto = false; // отключить автопркрутку
+        that.options.auto = false; // отключить автопрокрутку
     }
     else if (that.options.auto) {   // инициализация автопрокруки
         setAutoScroll();
