@@ -559,6 +559,61 @@ img {
     .socialWrapper.socialActive1 .default, .socialWrapper.socialActive2 .default, .socialWrapper.socialActive3 .default, .socialWrapper.socialActive4 .default, .socialWrapper.socialActive5 .default { display: none; }
     .socialWrapper.socialActive1 .head1, .socialWrapper.socialActive2 .head2, .socialWrapper.socialActive3 .head3, .socialWrapper.socialActive4 .head4, .socialWrapper.socialActive5 .head5 { display: block; }
 
+    @media (max-width: 500px) {
+        .sticky {
+            background-color:#343a40!important;
+            position: fixed;
+            /* top: 0; */
+            /* left: 0; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 20px 100px 20px 20px;
+            margin: 0;
+                }
+        
+        .sticky ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        
+        .sticky a {
+            font-weight: 100;
+            font-size: 18px;
+            color: rgb(255, 255, 255)
+        }
+        
+        .sticky .nav-item a:hover {
+            font-weight: 200;
+            color: #000000;
+                        }
+        .description {
+                position: absolute;
+                font-weight: bold;
+                top: 20%;
+                margin: 10px;
+                padding: 1rem;
+                color: rgb(44, 36, 36);
+                text-shadow: 2px 2px 2px rgb(182, 170, 170), 0 0 2em rgb(173, 126, 126);
+                
+            }
+            .description h3 {
+                font-size: 150%;
+               
+               }
+            .description p{
+                color: #292323;
+                font-size: 75%;
+                /* width: 50%; */
+                line-height: 1.5;
+                padding-top: 10px;
+              }    
+    }
+
 
 
     /* использовался раньше для разметки боксов  */

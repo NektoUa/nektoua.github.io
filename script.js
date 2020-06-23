@@ -39,10 +39,12 @@ $(document).ready(function () {
 });
 
 // Анимация текста
-$('#anime-portfolio').typeIt({
-    speed: 50, //скорость анимации
-    autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
-});
+if (document.documentElement.clientWidth > 500) {
+    $('#anime-portfolio').typeIt({
+        speed: 50, //скорость анимации
+        autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
+    });
+}
 
 // $('#anime-portfolio-two').typeIt({
 //     speed: 50,

@@ -1,7 +1,11 @@
 window.addEventListener("scroll", function () {
     let header = document.querySelector('.nav-st');
-    header.classList.toggle('navbar', window.scrollY > 0);
-    header.classList.toggle('sticky', window.scrollY === 0);
+    if (document.documentElement.clientWidth > 500) {
+        header.classList.toggle('navbar', window.scrollY > 0);
+        header.classList.toggle('sticky', window.scrollY === 0);
+    } else {
+        header.classList.add('navbar')
+    }
 })
 
 let a = document.querySelectorAll('.nav-link');
