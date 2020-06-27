@@ -14,8 +14,7 @@
     align-items: center;
     transition: 0.6s;
     padding: 20px 60px;
-    margin: 0 10px;
-        }
+    }
 
 .sticky ul {
     position: relative;
@@ -35,11 +34,6 @@
     color: #000000;
     text-shadow: 2px 2px 2px rgb(65, 57, 57), 0 0 2em rgb(173, 126, 126);
     }
-
-.nav-st{
-    /* background-color: blue; */
-    /* background-color:#343a40!important */
-}
 
 .navbar{
     /* background:rgb(204, 185, 167); */
@@ -119,8 +113,7 @@
     .animated-icon span:nth-child(2) {
     width: 10px;
     top: 8px;
-    /* text-align: center; */
-    margin: 0px 5px;
+     margin: 0px 5px;
     }
     
     .animated-icon span:nth-child(3) {
@@ -148,7 +141,6 @@
     transform: rotate(-135deg);
     }
 
-
 .header{
     background-image: url('./images/back1.jpg');
     background-attachment: fixed;
@@ -158,7 +150,6 @@
 
 .bg-primary{
     background-color:#343a40!important;
-    /* opacity: 0.2; */
 }
 
    .overlay{
@@ -273,57 +264,6 @@
     padding: 1em;
    }
 
-   /* раздел команда */
-   .team{
-    margin: 4em 0;
-    position: relative;  
-   }
-   .team h1{
-    color:#F97300;
-    margin: 2em; 
-   }
-   .team .item{
-    position: relative;
-   }
-   .team .des{
-    background: #F97300;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: 93%;
-    transition:.3s ease-in-out;
-   }
-   .team .item:hover .des{
-    height: 100%;
-    background:#f973007d;
-    position: absolute;
-    width: 89%;
-    padding: 5em;
-    top: 0;
-    border-bottom-left-radius: 0;
-   }
-
-   /* Форма обратной связи */
-   contact-form{
-    margin: 6em 0;
-    position: relative;  
-   }
-   .contact-form h1{
-    padding:2em 1px;
-    color: #F97300; 
-   }
-   .contact-form .right{
-    max-width: 600px;
-   }
-   .contact-form .right .btn-secondary{
-    background:  #F97300;
-    color: #fff;
-    border:0;
-   }
-   .contact-form .right .form-control::placeholder{
-    color: #888;
-    font-size: 16px;
-   }
-
    #topArrow {
 	position: fixed;
 	right: 50px;
@@ -348,60 +288,7 @@
     color: rgb(247, 233, 233);
 }
 
-   /* .social-icons {
-    list-style: none;
-    margin: 0px;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;      
-}
-.social-icons a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    border-radius: 50%;
-    font-size: 13px;
-    overflow: hidden;
-    position: relative;
-    color: #337AB7;
-    border: 0px;
-    transition: border-radius 0.2s linear 0s;
-    margin: 20px 30px 30px 20px;
-}
-.social-icons a:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    background-color: rgb(205, 213, 219);
-}
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.2s linear 0s;
-    position: relative;
-    z-index: 1;  
-}
-.social-icons a:hover {
-    border-radius: 10%;
-    width: 40px;
-    height: 40px;
-    color: #FFF;
-    }
-.social-icons a:hover:after {
-    top: 0;
-    transition: all 0.2s linear 0s;
-} */
-
-/* Портфолио */
+ /* Портфолио */
 img {
     width: 100%; !important;
     }
@@ -409,10 +296,7 @@ img {
     .sim-slider {
     max-width: 1000px;
     min-width: auto;
-    /* margin: auto;
-    padding: auto; */
-    /* border: 1px solid #ccd; */
-    background-color: white;
+        background-color: white;
     }
     
     .sim-slider {
@@ -444,80 +328,41 @@ img {
         margin: 100px;
     }
 
-    /* Портфолио квадрат */
+    /* Портфолио мобильная версия */
     @media (max-width: 850px) {
         .container {
-            /* background-color: bisque; */
             display: flex;
             flex-direction: column;
-            /* flex-flow: column wrap; */
+            flex-flow: column wrap;
         }
         .no {
             display: none;
         }
         .port {
-        /* width: auto; */
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
         flex-flow: column wrap;
         justify-content: start;
         }
-        .sim-slider {
-            max-width: 1000px;
-            min-width: auto;
-            /* margin: auto;
-            padding: auto; */
-            /* border: 1px solid #ccd; */
-            background-color: white;
-            }
-                .sim-slider-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: relative;
     }
-        .sim-slider-element {
-            position: absolute;
-            /* display: flex; */
-            /* display: none; */
-            /* position: relative; */
-            /* height: 708px; */
-        }
-        /* .sim-slider-element {
-            display: block;
-            position: static;
-        } */
-        .portfolio {
-            display: block;
-        }
-    }
+
     .container {
         display: flex;
-    
-    }
+        }
 
     .port {
         width: auto;
-        /* height: 300px; */
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
         justify-content: space-around;
     }
     .shrink {
         background-color:rgb(255, 255, 255);
         font-size: 0.9rem;
         height: 5rem;
-        /* width: 5rem; */
-        /* border: 1px solid rgb(19, 19, 20); */
-        /* border-radius: 2px; */
         align-content: center;
-        /* flex-shrink: 0; */
-        /* height: 70px;
-        width: 70px; */
-        /* z-index: 8; */
+
     }
     .shrink a {
         color: black;
@@ -535,10 +380,8 @@ img {
         text-align: center; 
         color: #fff; 
         letter-spacing: 2px; 
-        /* font-family: 'Bangers', cursive;  */
-        text-shadow: 1px 1px #222; 
-        /* background: #7B1FA2;  */
-        -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; 
+                text-shadow: 1px 1px #222; 
+               -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; 
         -o-transition: all 0.2s ease-out; 
         transition: all 0.2s ease-out; 
     }
@@ -562,17 +405,8 @@ img {
     @media (max-width: 500px) {
         .sticky {
             background-color:#343a40!important;
-            position: fixed;
-            /* top: 0; */
-            /* left: 0; */
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: 0.6s;
-            padding: 20px 100px 20px 20px;
-            margin: 0;
-                }
+            padding: 20px;
+        }
         
         .sticky ul {
             position: relative;
@@ -613,14 +447,3 @@ img {
                 padding-top: 10px;
               }    
     }
-
-
-
-    /* использовался раньше для разметки боксов  */
-    /* .box-in-port {
-        height: 5rem;
-        width: 5rem;
-        border: 1px solid;
-        /* padding: 3px; */
-        /* margin: 3px; */
-            } */
