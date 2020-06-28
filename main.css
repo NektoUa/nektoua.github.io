@@ -328,6 +328,20 @@ img {
         margin: 100px;
     }
 
+    #more {
+        font-size: 100%;
+        color: #3a3acc;
+      }
+      #more:hover {
+        color: brown;
+        background: #a9d7e2;
+        cursor: pointer;
+      }
+
+      .blog-text {
+        display: none;
+      }
+
     /* Портфолио мобильная версия */
     @media (max-width: 850px) {
         .container {

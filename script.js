@@ -46,11 +46,6 @@ if (document.documentElement.clientWidth > 500) {
     });
 }
 
-// $('#anime-portfolio-two').typeIt({
-//     speed: 50,
-//     autoStart: true
-// });
-
 // Анимация футер
 $(".social li a").each(function (i) {
     $(this).hover(function () {
@@ -58,5 +53,6 @@ $(".social li a").each(function (i) {
     });
 });
 
-
-
+$('.anim').click(function () {
+    $('.blog-text').slideToggle('slow');
+})
