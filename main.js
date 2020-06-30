@@ -39,13 +39,13 @@ const hello = () => {
 document.querySelector('#part-day').innerHTML = hello();
 
 // скрипт создания дивов фото
-const screenPortfolio = [['3', 'Istanbul'], ['4', '1'], ['5', '2'], ['1', '3']];
+const screenPortfolio = [['trolley', 'van hool trolley'], ['people-house', 'people.house']];
 
 function turnImg() {
     for (const element of screenPortfolio) {
         let newImg = document.createElement('img');
         newImg.classList.add('sim-slider-element');
-        newImg.src = `./images/portfolio/${element[0]}.jpg`;
+        newImg.src = `./images/portfolio/${element[0]}.png`;
         newImg.alt = element[1];
         document.querySelector('.sim-slider-list').appendChild(newImg);
     }
