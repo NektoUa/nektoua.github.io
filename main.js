@@ -39,7 +39,7 @@ const hello = () => {
 document.querySelector('#part-day').innerHTML = hello();
 
 // скрипт создания дивов фото
-const screenPortfolio = [['trolley', 'van hool trolley'], ['people-house', 'people.house'], ['todo-codepen', 'to-do']];
+const screenPortfolio = [['trolley', 'van hool trolley'], ['people-house', 'people.house'], ['todo-codepen', 'to-do'], ['zaz', 'zaz']];
 
 function turnImg() {
     for (const element of screenPortfolio) {
