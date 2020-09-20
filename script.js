@@ -36,23 +36,26 @@ $(document).ready(function () {
         }, 1000)
 
     })
+    // Анимация текста
+    if (document.documentElement.clientWidth > 500) {
+        $('#anime-portfolio').typeIt({
+            speed: 50, //скорость анимации
+            autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
+        });
+    }
+
+    // Анимация футер
+    $(".social li a").each(function (i) {
+        $(this).hover(function () {
+            $(".socialWrapper").toggleClass("socialActive" + (i + 1));
+        });
+    });
+
+    // Анимация блог
+    $('.anim').click(function () {
+        $('.blog-text').slideToggle('slow');
+    })
+
+
 });
 
-// Анимация текста
-if (document.documentElement.clientWidth > 500) {
-    $('#anime-portfolio').typeIt({
-        speed: 50, //скорость анимации
-        autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
-    });
-}
-
-// Анимация футер
-$(".social li a").each(function (i) {
-    $(this).hover(function () {
-        $(".socialWrapper").toggleClass("socialActive" + (i + 1));
-    });
-});
-
-$('.anim').click(function () {
-    $('.blog-text').slideToggle('slow');
-})
