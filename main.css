@@ -240,8 +240,16 @@
      margin: 1em;
    }
 
+   #game {
+       padding: 30px 10px;
+   }
+
+   #game .btn {
+       background-color: rgb(102, 102, 102);
+   }
+
    /* Типо блог */
-   .blog{
+   /* .blog{
     margin: 4em 0;
     position: relative; 
    }
@@ -262,7 +270,7 @@
    }
    .blog .card-body{
     padding: 1em;
-   }
+   } */
 
    #topArrow {
 	position: fixed;
@@ -328,11 +336,11 @@ img {
         margin: 100px;
     }
 
-    #more {
+    .more {
         font-size: 100%;
         color: #3a3acc;
       }
-      #more:hover {
+      .more:hover {
         color: brown;
         background: #a9d7e2;
         cursor: pointer;

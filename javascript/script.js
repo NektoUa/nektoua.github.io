@@ -53,7 +53,8 @@ $(document).ready(function () {
 
     // Анимация блог
     $('.anim').click(function () {
-        $('.blog-text').slideToggle('slow');
+        $(this).find('.blog-text').slideToggle('slow');
+        // $('.blog-text').slideToggle('slow');
     })
 
 
