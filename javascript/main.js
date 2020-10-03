@@ -159,3 +159,4 @@ Sim.initialize = function (that) {
 };
 
 new Sim();
+console.log('%c I.B.', 'color: green; font-size: 20px; ')
