@@ -160,3 +160,29 @@ Sim.initialize = function (that) {
 
 new Sim();
 console.log('%c I.B.', 'color: green; font-size: 20px; ')
+
+// const Shrink = [['https://codepen.io/nektoua/pens/popular', 'codepen2', 'Codepen'], ['https://github.com/NektoUa/people-house', 'react', 'React'], ['https://nektoua.github.io/trolleybuszp/', 'code', 'Website']]
+
+// function turnShrink() {
+//     for (const element of Shrink) {
+//         let newHref = document.createElement('a');
+//         newHref.classList.add('elementor');
+//         newHref.href = element[0];
+//         newHref.target = "_blank";
+//         document.querySelector('.shrink').appendChild(newHref);
+
+//         let newImg = document.createElement('img');
+//         newImg.classList.add('icon-port');
+//         newImg.src = `./images/icon-port/${element[1]}.svg`;
+//         newImg.alt = element[2];
+//         document.querySelector('.elementor').appendChild(newImg);
+
+//         let newSpan = document.createElement('span');
+//         newSpan.innerHTML = element[2];
+//         document.querySelector('.elementor').appendChild(newSpan);
+//     }
+// }
+// turnShrink();
+
+// let port = document.querySelector('.port')
+// console.table(port)

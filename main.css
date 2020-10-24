@@ -285,9 +285,9 @@
    }
 
    .page-footer {
-    background: #f1eeee;
+         background: #f1eeee;
     color: #1b1917;
-    margin: auto;
+    margin-top: 100px;
        }
 
    .num{
